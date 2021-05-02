@@ -1,9 +1,12 @@
+document.getElementById("input_colour").defaultValue = "black";
+document.getElementById("input_radius").defaultValue = "40";
+document.getElementById("input_width").defaultValue = "1";
 canvas = document.getElementById("myCanvas");
 ctx = canvas.getContext("2d");
 colour = "black";
 width = 1;
 radius = 40;
-mouse_event = "";
+mouse_event = "empty";
 canvas.addEventListener("mousedown", my_mousedown);
 function my_mousedown(e) {
     colour = document.getElementById("input_colour").value;
